@@ -13,3 +13,26 @@
 <hr />
 
 <vc:poco></vc:poco>
+
+<hr />
+
+
+@await Component.InvokeAsync("FirstBaseClassView")
+
+<hr />
+
+<vc:poco></vc:poco>
+
+<h1>News List</h1>
+<vc:news-lists></vc:news-lists>
+
+
+<hr />
+
+<vc:news-lists view-name="MyNews"></vc:news-lists>
+
+<hr />
+@await Component.InvokeAsync("NewsLists",new{viewName="Default"})
+
+
+<vc:product-summary></vc:product-summary>

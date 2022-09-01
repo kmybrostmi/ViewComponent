@@ -8,5 +8,11 @@ namespace ViewComponentSample.Controllers
         {
             return View();
         }
+
+        public IActionResult News()
+        {
+            return View();
+        }
     }
 }
+
