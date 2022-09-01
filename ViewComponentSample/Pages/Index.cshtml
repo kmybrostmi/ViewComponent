@@ -1,0 +1,15 @@
+﻿@page
+@model ViewComponentSample.Pages.IndexModel
+@{
+}
+
+<h1>
+    Hello Razor
+</h1>
+
+@await Component.InvokeAsync("Poco");
+
+
+<hr />
+
+<vc:poco></vc:poco>
